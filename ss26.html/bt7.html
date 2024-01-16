@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let arr = [1,6,8,3,5,8,2,3,5,3];
+        let find = +prompt("nhap so de tim arr_con :")
+        let sonArr =[];
+        sum = 0;
+        cont =0;
+
+        for(let i = 0 ; i < arr.length ; i++){
+            sonArr.push(arr[i])
+            sum+=arr[i]
+            if(sum === find){
+                cont=1;
+                break;
+            }
+        }
+        if(sum > find){
+            while(sum>find && sonArr.length>0){
+            sum -= son_Arr[0];
+            sonArr.shift();
+            }
+            if(sum === find){
+                cont=1;
+            }
+        }
+        if(cont == 1){
+            console.log(sonArr)
+
+        }
+        else{
+            
+            console.log(`khong co mang nao thoa man`) 
+        }
+
+    </script>
+</body>
+</html>
